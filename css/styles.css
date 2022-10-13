@@ -1,0 +1,514 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+ }
+  body {
+    margin: 0;
+    line-height: 1.5;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  section{
+    padding: 2em 3em;
+   
+  }
+  .navbar{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #850000, #7a0052);
+    position:sticky;
+    top:0;
+    z-index:100;
+    
+  }
+  
+  .logo-container{
+    width:20%;
+    display: inline-block;
+  }
+  .logo-container img{
+   width: 30%;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   object-fit:cover;
+   
+
+  }
+  .logo-container img:hover{
+   opacity: 0.9;
+  }
+  .menu-container{
+    display:inline-block;
+    /* justify-content:center;
+    align-items:center;
+    overflow: hidden; */
+    /* flex: 1; */
+   margin-left:9em;
+  }
+  .menu-container ul{
+    display:flex;
+    /* flex: 1; */
+    /* justify-content: flex-end; */
+    /* justify-content:center; */
+    /* align-items:center; */
+    list-style: none;
+    overflow:hidden;
+
+  }
+.menu-container li{
+  padding:0 1em;
+}
+ 
+.menu-container a{
+  text-decoration: none;
+  display: inline-block;
+  margin:10px;
+  color: white;
+}
+.menu-container ul a:hover{
+  color: orange;
+}
+.button-container{
+  padding-left:2em;
+  display:inline-block;
+
+
+}
+.secondary-btn{
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 7px;
+  border: 1px solid #ed9805;
+  color: white;
+  background-color:#ed9805;
+
+}
+.primary-btn{
+  padding: 5px 13px;
+  font-size: 1em;
+  border-radius: 8px;
+  color: white;
+  background:none;
+  border: 1px solid #ed9805;
+}
+
+.primary-btn a, .secondary-btn a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.primary-btn a, .secondary-btn a, .homepage-btn a:hover{
+  opacity:0.8;
+  transition: .9s ease-in-out;
+  
+}
+.homepage-btn:active{
+  border:2px solid #850000;
+}
+.button-container .primary-btn{
+  margin-right: 3em;
+}
+
+/* DESCRIPTION TITLE */
+
+.desc_title_container, .email-sub-container{
+  display:flex;
+  background: linear-gradient(to right, #850000, #7a0052);
+  border:none;
+  position:relative;
+  height: auto;
+  
+}
+.description-container, .image-container{
+   flex:1; 
+}
+.description-container h1{
+ color:white;
+padding-top: 2em;
+
+}
+.description-container p{
+    display: flex;
+
+  color:white;
+  padding:2em 0;
+}
+.homepage-btn{
+  padding:10px 15px;
+  background:#ed9805;
+  border:2px solid orange;
+  border-radius:7px;
+}
+.homepage-btn a{
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+  display:block;
+  text-transform:uppercase;
+}
+
+
+ @media (max-width: 45em){
+    .navbar{
+        display:inline-block;
+    }
+    .logo-container{
+        display: inline-block;
+        min-width: 45%;
+    }
+.navbar-brand{
+    align-items: center;
+  
+}
+.navbar-toggler{
+  display:inline-block;
+ position:absolute;
+ right: 1rem;
+ top: 0;
+}
+
+.button-container{
+    display: flex;
+    justify-content:space-around ;
+  margin: 0.5em 1.5em 2em 1.5em;
+  padding-left: auto;
+  padding-right: auto;
+
+ 
+}
+.primary-btn{
+    display: flex; 
+    width:30%;
+    
+}
+.secondary-btn{
+    display: flex;
+    width:30%;
+}
+
+   
+ .desc_title_container{
+        display:flex;
+        flex-direction: column;
+        width: auto;
+    }
+ .email-sub-container{
+        display: flex;
+        flex-direction: column;
+        width:auto;
+    }
+  .description-container{
+        display:flex;
+        flex-direction: column;
+      
+      
+    }
+  .description-container h1{
+        padding: 0;
+        
+     }
+     .course-details button{
+      margin-right: 4em;
+     }
+    .image-container{
+        width: 100%;
+        height: auto;
+        margin: 3em 0;
+    }
+    .image-container img{
+        width: 100%;
+      
+    }
+    .course-box{
+        margin: 2em 0;
+    }
+    .email-sub-img{
+    margin-top:2em;
+      width:20%;
+      height:60%;
+      overflow: hidden;
+    }
+    .email-sub-img img{
+      max-width:60%;
+      height:40%;
+      object-fit:cover;
+
+    }
+    .footer-column{
+        text-align: center;
+    }
+}
+
+@media (min-width:45em) and (max-width: 61em) {
+  /* .navbar{
+    display:inline-block;
+    width: auto;
+} */
+  .logo-container{
+   
+    min-width: 30%; 
+ }
+
+
+.button-container{
+display: flex;
+margin-right:10em;
+
+
+}
+.navbar-toggler{
+display:inline-block;
+position:absolute;
+right: 1rem;
+top: 0;
+width: auto;
+} 
+
+.primary-btn{
+display: flex;
+
+}
+.secondary-btn{
+display: flex;
+
+} 
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.desc_title_container{
+    display: flex;
+    flex-direction: column;
+}
+.email-sub-container{
+    display: flex;
+    flex-direction: column;
+}
+.email-sub-img{
+  margin-left:auto;
+  margin-right:auto;
+}
+} 
+
+/* WAVE DESCRIPTION */
+
+.wave{
+  position:absolute;
+  width: 100%;
+  height:38px;
+  bottom:0;
+  left:0;
+  background:url("../images/wave.png");
+  animation:animate 10s linear infinite;
+}
+.wave2{
+  position:absolute;
+  width: 100%;
+  height:39px;
+  top:0;
+  left:0;
+  border-top:2px solid white;
+  background:url("../images/wave2.png");
+  animation:animate 10s linear infinite;
+}
+.wave::before{
+  content:"";
+  position:absolute;
+  width: 100%;
+  height:38px;
+  bottom:0;
+  left:0;
+  opacity:0.4;
+  background:url("../images/wave.png");
+  animation:animate 10s reverse infinite;
+}
+.wave2::before{
+  content:"";
+  position:absolute;
+  width: 100%;
+  height:39px;
+  top:0;
+  left:0;
+  opacity:0.4;
+  background:url("../images/wave2.png");
+  animation:animate 10s reverse infinite;
+}
+.wave::after{
+  content:"";
+  position:absolute;
+  width: 100%;
+  height:38px;
+  bottom:0;
+  left:0;
+  opacity:0.4;
+  animation-delay:-5s;
+  background:url("../images/wave.png");
+  animation:animate 20s reverse infinite;
+}
+.wave2::after{
+  content:"";
+  position:absolute;
+  width: 100%;
+  height:39px;
+  top:0;
+  left:0;
+  opacity:0.4;
+  animation-delay:-5s;
+  background:url("../images/wave2.png");
+  animation:animate 20s reverse infinite;
+}
+@keyframes animate{
+  0%{
+    background-position:0;
+  }100%{
+    background-position:1811px;
+  }
+}
+@keyframes animate-reverse{
+  0%{
+    background-position:0;
+  }100%{
+    background-position:1811px;
+  }
+}
+
+/* COURSE DETAILS */
+.course-box{
+  /* width:300px; */
+  border-radius: 5px;
+  background-color:white;
+  box-shadow:0 0 5px #cfcfcf;
+}
+.course-link{
+display:block;
+text-decoration:none;
+color:#141414;
+}
+.course-img{
+width:100%;
+height:60%;
+overflow:hidden;
+}
+.course-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.course-details{
+padding:10px;
+}
+.course-price{
+padding:10px 0;
+font-weight:bold;
+}
+.old-price{
+font-weight:300;
+text-decoration:line-through;
+display:inline-block;
+padding-left:10px;
+}
+.course-details h5{
+overflow:hidden;
+text-overflow:ellipse;
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient:vertical;
+}
+.courses-container{
+display:grid;
+grid-gap:20px;
+grid-template-columns:repeat(auto-fill, minmax(17em, 1fr));
+}
+
+/* EMAIL SUBCRIPTION DESCRIPTION */
+.email-sub-img{
+width:500px;
+height:400px;
+border-radius:20px;
+overflow:hidden;
+
+}
+.email-sub-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+/* FOOTER CONTAINER */
+.footer-container{
+background-color:#f5f2f2;
+}
+.footer-top{
+display:grid;
+grid-gap:20px;
+grid-template-columns:repeat(auto-fill, minmax(15em, 1fr));
+}
+.footer-column h3{
+padding-top:40px;
+}
+.footer-column ul li{
+list-style:none;
+}
+.footer-column ul li a{
+
+text-decoration:none;
+line-height:1.6;
+color:#4a4a4a;
+}
+.footer-column ul li a:hover{
+font-weight:bold;
+color:#7a0052;
+}
+
+.bottom-footer{
+background: linear-gradient(to right, #850000, #7a0052);
+padding: 50px 50px 20px 50px;
+height:auto;
+position:relative;
+}
+.social-container h3{
+text-align:center;
+padding-top:10px;
+color:white;
+}
+.social-links{
+margin:10px 0;
+display:flex;
+justify-content:center;
+}
+.social-links a{
+margin:0 19px;
+color:white;
+padding:10px;
+border:1px solid white;
+border-radius:50%;
+width:40px;
+height:40px;
+display:flex;
+justify-content:center;
+text-decoration:none;
+}
+.social-links i{
+color:white;
+font-size:18px;
+
+}
+.social-links i:hover{
+color:#ed9805;
+}
+span{
+display:block;
+width:100%;
+text-align:center;
+font-size:small;
+margin-top:20px;
+color:white;
+}
